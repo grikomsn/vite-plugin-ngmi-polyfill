@@ -51,7 +51,7 @@ export default defineConfig({
 
 ## Examples
 
-TODO
+- https://github.com/strangelove-ventures/graz-vite-example
 
 ## Included packages
 
