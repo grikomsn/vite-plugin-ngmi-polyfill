@@ -1,0 +1,64 @@
+{
+  "name": "vite-plugin-ngmi-polyfill",
+  "description": "Vite plugin for polyfilling Node.js built-in globals and modules ⚡️",
+  "version": "0.0.1",
+  "author": "Griko Nibras <griko@strangelove.ventures>",
+  "repository": "https://github.com/grikomsn/vite-plugin-ngmi-polyfill.git",
+  "homepage": "https://github.com/grikomsn/vite-plugin-ngmi-polyfill",
+  "bugs": "https://github.com/grikomsn/vite-plugin-ngmi-polyfill/issues",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**.js",
+    "dist/**.cjs",
+    "dist/**.mjs",
+    "dist/**.d.ts"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup -w",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "latest",
+    "@esbuild-plugins/node-modules-polyfill": "latest",
+    "rollup-plugin-node-polyfills": "latest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7",
+    "@vercel/style-guide": "^3",
+    "eslint": "^8",
+    "husky": "^8",
+    "lint-staged": "^13",
+    "postinstall-postinstall": "^2",
+    "prettier": "^2",
+    "tsup": "^6",
+    "typescript": "^4",
+    "vite": "^3"
+  },
+  "peerDependencies": {
+    "vite": "^3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./config/eslint.js"
+    ],
+    "ignorePatterns": [
+      "dist/",
+      "node_modules/"
+    ],
+    "root": true
+  },
+  "lint-staged": {
+    "*.{json,md}": [
+      "prettier --write"
+    ],
+    "**/*.ts": [
+      "eslint --fix"
+    ]
+  },
+  "prettier": "./config/prettier.js",
+  "license": "MIT"
+}
