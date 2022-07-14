@@ -60,5 +60,15 @@
     ]
   },
   "prettier": "./config/prettier.js",
+  "keywords": [
+    "ngmi",
+    "polyfill",
+    "vite",
+    "vite-plugin",
+    "vite-plugin-ngmi",
+    "vite-plugin-ngmi-polyfill",
+    "vite-plugin-node-polyfill",
+    "vite-plugin-polyfill"
+  ],
   "license": "MIT"
 }
