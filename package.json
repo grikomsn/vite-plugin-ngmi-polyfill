@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-ngmi-polyfill",
   "description": "Vite plugin for polyfilling Node.js built-in globals and modules ⚡️",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Griko Nibras <griko@strangelove.ventures>",
   "repository": "https://github.com/grikomsn/vite-plugin-ngmi-polyfill.git",
   "homepage": "https://github.com/grikomsn/vite-plugin-ngmi-polyfill",
