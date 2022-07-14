@@ -22,9 +22,9 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@esbuild-plugins/node-globals-polyfill": "latest",
-    "@esbuild-plugins/node-modules-polyfill": "latest",
-    "rollup-plugin-node-polyfills": "latest"
+    "@esbuild-plugins/node-globals-polyfill": "^0",
+    "@esbuild-plugins/node-modules-polyfill": "^0",
+    "rollup-plugin-node-polyfills": "^0"
   },
   "devDependencies": {
     "@babel/core": "^7",
